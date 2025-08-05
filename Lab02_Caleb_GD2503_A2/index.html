@@ -53,18 +53,19 @@
                 <strong>December</strong>: Singapore authorized the Pfizer-BioNTech Covid-19 vaccine, receiving the first shipment on December 21. Vaccinations began with frontline healthcare workers by the end of the month. The country moved into phase three reopening on December 28, permitting larger dining groups while maintaining vigilance despite low case numbers.
             </li>
             </ol>
-            <img src="images/image06.jpeg">
+            <img src="images/image06.jpeg" alt="SGgraph">
             <h6>A graph of active cases in singapore over a period of time.</h6>
     </section>
     <section class="page" id="page2">
+        <h2>Statistics and Interactables</h2>
             <article>
                 <h2 class="world">Covid Data of World</h2>
-                <img class="world" src="images/Image02.png">
+                <img class="world" src="images/Image02.png" alt="Worldstats">
                 <button id="switch">Click to switch data!</button>
             </article>
             <article>
                 <h2 class="singapore"> Covid Data in Singapore</h2>
-                <img class="singapore" src="images/image03.png">
+                <img class="singapore" src="images/image03.png" alt="SGstats">
             </article>
             <article>
                 <h2>Do you know how the pandemic spreads? Test your knowledge here!</h2>
@@ -108,13 +109,14 @@
             </article>
             <article>
                 <h2>Covid stat simulator 1000</h2>
-                <input class="box" id="death" type="number" placeholder="Enter Death rate"> 
-                <input class="box" id="infection" type="number" placeholder="Enter Infection rate"> 
+                <input class="box" id="death" type="number" placeholder="Enter Death rate (1-100)"> 
+                <input class="box" id="infection" type="number" placeholder="Enter Infection rate (1-10)"> 
                 <input class="box" id="time" type="number" placeholder="Enter period (1-7)"> 
                 <button id="Finalize">Final result</button>
                 <h3 id="i">Infections: 704753890</h3>
                 <h3 id="d">Deaths: 7010681 </h3>
-                <p class="msg-box">Enter the death or infection rate in the box</p>
+                <p class="msg-box">Enter the death or infection rate in the box.</p>
+                <p class="msg-box">E.g: If the death rate is high the total infection will be reduced.</p>
             </article>
     </section>
     <section class="page" id="page3">
@@ -123,13 +125,16 @@
     <p>If the two items are overlapped, refresh the page again.</p>
     Difficulty: <input type="range" id="diffculty" min="500" max="5000" value="2000"><br>
     <article>
-        <button id="StartGame">Start Game</button>
-        <button id="PauseGame">Pause Game</button>
-        <button id="ResumeGame">Resume Game</button>
+    <h6>Game</h6>
+        <div>
+            <button id="StartGame">Start Game</button>
+            <button id="PauseGame">Pause Game</button>
+            <button id="ResumeGame">Resume Game</button>
+        </div>
     </article>
         <div id="game">
-            <img id="syringe" src="images/image05.png">
-            <img id="covid" src="images/image04.png">
+            <img id="syringe" src="images/image05.png" alt="vaccine">
+            <img id="covid" src="images/image04.png" alt="virus">
         </div>
         <button class="movement" id="Up">Up</button>
         <button class="movement" id="Down">Down</button>
@@ -139,6 +144,7 @@
         <p id="winValue">Reach 2000 points to win the game without touching the virus.</p>
     </section>
     <section class="page" id="page4">
+        <h5>External Links</h5>
         <ol>
             <li>
                 <a href="https://www.asiaone.com/singapore/1-year-covid-19-singapore-timeline-milestones">Singapore 1 year covid timeline milestones 2020</a>

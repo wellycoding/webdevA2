@@ -1,4 +1,4 @@
-//target all elements to save to constants
+
 const page1btn=document.querySelector("#page1btn");
 const page2btn=document.querySelector("#page2btn");
 const page3btn=document.querySelector("#page3btn");
@@ -37,7 +37,7 @@ page3btn.addEventListener("click", function () {
 page4btn.addEventListener("click", function () {
     pageNum = 4;
     show(pageNum);
-})
+});
 
 
 
@@ -56,7 +56,7 @@ slider.addEventListener("input", function(){
     winVal.innerHTML = "Reach " + slider.value + " points to win the game without touching the virus.";
     console.log(slider.value);
     totalDuration = slider.value;
-})
+});
 
 const startGame = document.querySelector("#StartGame");
 const pauseGameBtn = document.querySelector("#PauseGame");
@@ -102,7 +102,7 @@ function checkCollision(){
 }
 
 function randRange(min, max) {
-    return Math.round(Math.random()*(max-min) + min)
+    return Math.round(Math.random()*(max-min) + min);
 }
 
 const bounce = new Audio("audio/Bounce.wav");
